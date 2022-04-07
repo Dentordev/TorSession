@@ -28,7 +28,7 @@ this also works with onionsites
 
 You will need to have tor installed for this to work and your path will need to be setup 
 
-Now I am a bit of a Noob with github but I'll get to your get to guy's level eventually 
+Now I am a bit of a Noob with github but I'll get to your get to your guy's level eventually 
 
 
 .. code-block:: python
