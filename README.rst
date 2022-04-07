@@ -1,4 +1,7 @@
-# TorSession
+==========
+TorSession
+==========
+
 TorSession is a library That I made for using requests html's asynchronous requests class simply for making get requests anonymously
 
 how to use it 
@@ -14,7 +17,7 @@ Here an Example of how I use this library:
 
         ts = await TorSession()
 
-        r = ts.get("https://httpbin.org/ip")
+        r = await ts.get("https://httpbin.org/ip")
 
         r.json() # -> Tor Exit Node 
 
