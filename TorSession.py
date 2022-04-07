@@ -29,6 +29,7 @@ def check_connection():
         print(Fore.LIGHTGREEN_EX + "[+] Tor Has been Activated and You have now been connected to tor")
 
 
+#TODO Make it possible to use passwords using torcc file to get access to tor 
 
 def activate_Tor(tor_path:str):
     """Turns on tor on ControlPort 9051 You will need to properly setup your path to your 
@@ -51,11 +52,10 @@ def roate_tor_curcit():
         controller.authenticate()
         controller.signal(Signal.NEWNYM)
 
-
-async def TorSession(authenticate:bool = False, random:bool = True):
+async def TorSession(tor_path:Optional[str], authenticate:bool = False, random:bool = True,):
     """Creates a tor Session to used As long as you have made no changes to your torrc file"""
     if authenticate:
-        await asyncio.to_thread(check_connection)
+        await asyncio.to_thread(check_connection,tor_path=tor_path)
     ua = UserAgent(min_version=50)
     Session = AsyncHTMLSession(mock_browser = False)
     # this will be used to kill of Google's Tracking cookies on twitter and other places when were finsihed 
