@@ -22,10 +22,27 @@ Here an Example of how I use this library:
         r.json() # -> Tor Exit Node 
 
 
-The Library can also use the anti-Useragent class to spoof your useragent so that more websotes can accept your requests
+The Library can also use the anti-Useragent class to spoof your useragent so that more websites can accept your requests
 this also works with onionsites
 
 
 You will need to have tor installed for this to work and your path will need to be setup 
 
-Now I am a bit of a Noob with github but Ill get to your get to guy's level eventually 
+Now I am a bit of a Noob with github but I'll get to your get to guy's level eventually 
+
+
+.. code-block:: python
+
+    from TorSession import TorSession
+
+
+    async def get_tor_session():
+
+        ts = await TorSession()
+
+        r = await ts.get("https://httpbin.org/ip")
+
+        r.json() # -> Tor Exit Node 
+
+
+
