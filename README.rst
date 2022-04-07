@@ -31,18 +31,6 @@ You will need to have tor installed for this to work and your path will need to 
 Now I am a bit of a Noob with github but I'll get to your get to your guy's level eventually 
 
 
-.. code-block:: python
-
-    from TorSession import TorSession
-
-
-    async def get_tor_session():
-
-        ts = await TorSession()
-
-        r = await ts.get("https://httpbin.org/ip")
-
-        r.json() # -> Tor Exit Node 
 
 
 
