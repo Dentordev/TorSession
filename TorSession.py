@@ -10,7 +10,7 @@ from colorama import Fore, init
 import asyncio
 
 
-def check_connection():
+def check_connection(connector:str):
     """Checks to see if your connection is alive or dead if dead it will activate tor for you"""
     init(True)
     session = Session()
@@ -25,7 +25,7 @@ def check_connection():
     except:
         print(Fore.LIGHTYELLOW_EX + "[!] Tor Is Not Activated on your device so we are going to connect it for you")
         print(Fore.LIGHTYELLOW_EX + "[>>] Connecting to tor...")
-        activate_Tor()
+        activate_Tor(connector)
         print(Fore.LIGHTGREEN_EX + "[+] Tor Has been Activated and You have now been connected to tor")
 
 
