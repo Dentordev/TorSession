@@ -33,5 +33,11 @@ Now I am a bit of a Noob with github but I'll get to your get to your guy's leve
 Mit Licence 
 https://github.com/Dentordev/TorSession/blob/main/LICENSE
 
+If You Would like to Support me and my projects You can donate to my Monero Wallet
+
+.. 
+
+    84QtScDcuiwMkdbSzWsou7XGQbfwfnMztJa51z2XDAHLVeHDAj9pg7PY2HdfjB9hxQWQm8DBvKYw4QFuzPJ5vAM91iz2HvF
+
 
 
